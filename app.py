@@ -10,11 +10,19 @@ import os
 
 # Initialize Firebase Admin SDK
 if not firebase_admin._apps:  # Prevent re-initialization
-    cred = credentials.Certificate('jobclassifier-938cc-db76c37f1690.json')
-    firebase_admin.initialize_app(cred)
+    firebase_config = {
+        "apiKey": st.secrets["firebase"]["api_key"],
+        "authDomain": st.secrets["firebase"]["auth_domain"],
+        "projectId": st.secrets["firebase"]["project_id"],
+        "storageBucket": st.secrets["firebase"]["storage_bucket"],
+        "messagingSenderId": st.secrets["firebase"]["messaging_sender_id"],
+        "appId": st.secrets["firebase"]["app_id"]
+    }
+    cred = credentials.ApplicationDefault()  
+    firebase_admin.initialize_app(cred, firebase_config)
 
 # Firebase Web API Key
-FIREBASE_API_KEY = "AIzaSyCYu1nD3lamQETKuRR1DxQSfF2-A9gk2fU"
+FIREBASE_API_KEY = st.secrets["firebase"]["api_key"]
 
 # Firebase REST API - Signup and Login
 def firebase_signup(email, password):
