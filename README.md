@@ -1,4 +1,7 @@
-**Job Classifier**
+# 📝Job Classifier
+
+🚀 **Live Demo**: [Click here to try the app](https://jobclassifier-24.streamlit.app/)
+
 
 **Overview**
 
