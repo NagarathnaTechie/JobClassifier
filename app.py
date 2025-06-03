@@ -359,40 +359,24 @@ def check_authentication():
     return True
     
 def display_header():
-    st.markdown("""
-        <style>
-            .header-bar {
-                background-color: white;
-                padding: 10px 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                border-bottom: 1px solid #ddd;
-            }
-            .header-logo {
-                font-size: 24px;
-                font-weight: bold;
-                color: #374151;
-            }
-            .welcome-text {
-                text-align: center;
-                margin-top: 10px;
-                font-size: 25px;
-            }
-        </style>
-        <div class="header-bar">
-            <div class="header-logo">📝 Job Classifier</div>
-        </div>
-    """, unsafe_allow_html=True)
+    # Header row: title on left, logout on right
+    col1, col2 = st.columns([6, 1])
+    with col1:
+        st.markdown("### 📝 Job Classifier")
+    with col2:
+        with st.container():
+            st.markdown("<div style='text-align:right;'>", unsafe_allow_html=True)
+            if st.button("🚪 Logout", key="logout-btn"):
+                logout()
+            st.markdown("</div>", unsafe_allow_html=True)
 
+    # Welcome text centered below
     st.markdown(f"""
-        <div class="welcome-text">
+        <div style='text-align:center; font-size:25px; margin-top:10px;'>
             Welcome, {st.session_state.user_info.get('name', 'User')}
         </div>
     """, unsafe_allow_html=True)
 
-    if st.button("🚪 Logout"):
-        logout()
 
 
 
