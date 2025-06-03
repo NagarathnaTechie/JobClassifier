@@ -400,11 +400,15 @@ def auth_page():
         st.session_state.is_logged_in = False
         st.session_state.user_info = None
     
-    # Center the authentication form
-    st.markdown("### 📝 Job Classifier")
-    
+    # Center the authentication form    
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
+        st.markdown("""
+            <div style='text-align:center; font-size:28px; font-weight:bold; padding-bottom:10px;'>
+                📝 Job Classifier
+            </div>
+        """, unsafe_allow_html=True)
+        
         tab1, tab2 = st.tabs(["🔑 Login", "👤 Sign Up"])
 
         with tab1:
