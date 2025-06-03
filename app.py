@@ -97,7 +97,7 @@ st.markdown("""
         font-weight: 700; 
         margin-top: 0;
         margin-bottom: 0.5rem; 
-        color: #ffffff;
+        color: #b0b0b0;
         text-align: center;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         -webkit-background-clip: text;
