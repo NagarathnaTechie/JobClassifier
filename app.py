@@ -396,7 +396,7 @@ def display_header():
         </div>
     """, unsafe_allow_html=True)
 
-    if st.query_params.get("logout") == "true":
+    if st.experimental_get_query_params().get("logout", [""])[0] == "true":
         logout()
 
 
