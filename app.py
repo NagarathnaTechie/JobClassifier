@@ -87,7 +87,7 @@ st.markdown("""
         padding: 3rem;
         box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         border: 1px solid #444;
-        max-width: 450px;
+        max-width: 320px;
         margin: 0 auto;
         backdrop-filter: blur(15px);
     }
