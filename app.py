@@ -84,7 +84,7 @@ st.markdown("""
     .auth-card {
         background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
         border-radius: 20px;
-        padding: 1.5rem 1rem; 
+        padding: 0.5rem 1rem 1.5rem 1rem; 
         box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         border: 1px solid #444;
         max-width: 450px;
@@ -95,7 +95,8 @@ st.markdown("""
     .card-title { 
         font-size: 2rem; 
         font-weight: 700; 
-        margin-bottom: 0.15rem; 
+        margin-top: 0;
+        margin-bottom: 0.5rem; 
         color: #ffffff;
         text-align: center;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
