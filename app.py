@@ -84,10 +84,10 @@ st.markdown("""
     .auth-card {
         background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
         border-radius: 20px;
-        padding: 3rem;
+        padding: 1.5rem 1rem; 
         box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         border: 1px solid #444;
-        max-width: 310px;
+        max-width: 450px;
         margin: 0 auto;
         backdrop-filter: blur(15px);
     }
