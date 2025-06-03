@@ -7,6 +7,8 @@
 
 Job Classifier is a Streamlit-based web application designed to streamline job searching by analyzing user resumes and providing personalized job recommendations. Leveraging natural language processing (NLP) and Firebase authentication, the app extracts key information from PDF resumes, matches skills and experience to job roles, and delivers tailored job suggestions. The intuitive dark-themed interface ensures a seamless user experience, from authentication to job discovery.
 
+
+
 **Features**
 
 Firebase Authentication
