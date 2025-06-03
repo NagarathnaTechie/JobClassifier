@@ -1,6 +1,7 @@
 streamlit==1.29.0
 PyPDF2==3.0.1
-spacy==3.7.2
-en-core-web-sm==3.7.0
+spacy==3.7.1
 pandas==2.0.3
 numpy==1.24.4
+firebase-admin==3.2.0
+difflib==0.0.1
