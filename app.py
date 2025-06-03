@@ -18,12 +18,11 @@ if not firebase_admin._apps:  # Prevent re-initialization
         "messagingSenderId": st.secrets["firebase"]["messaging_sender_id"],
         "appId": st.secrets["firebase"]["app_id"]
     }
-    cred = credentials.ApplicationDefault()  
+    cred = credentials.ApplicationDefault()
     firebase_admin.initialize_app(cred, firebase_config)
 
 # Firebase Web API Key
 FIREBASE_API_KEY = st.secrets["firebase"]["api_key"]
-
 # Firebase REST API - Signup and Login
 def firebase_signup(email, password):
     url = f"https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={FIREBASE_API_KEY}"
