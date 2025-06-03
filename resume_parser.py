@@ -1,15 +1,17 @@
 import PyPDF2
 import re
 import spacy
+import sys
 from typing import Dict, List
 
-# Load spacy model
+# Load spaCy model
 try:
     nlp = spacy.load("en_core_web_sm")
 except OSError:
     import subprocess
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
     nlp = spacy.load("en_core_web_sm")
+
 
 class ResumeParser:
     def __init__(self):
