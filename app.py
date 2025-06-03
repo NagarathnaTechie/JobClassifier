@@ -401,6 +401,7 @@ def auth_page():
         st.session_state.user_info = None
     
     # Center the authentication form
+    st.markdown("### 📝 Job Classifier")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
