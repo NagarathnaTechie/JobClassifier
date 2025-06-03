@@ -95,7 +95,7 @@ st.markdown("""
     .card-title { 
         font-size: 2rem; 
         font-weight: 700; 
-        margin-bottom: 0.5rem; 
+        margin-bottom: 0.15rem; 
         color: #ffffff;
         text-align: center;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -108,7 +108,7 @@ st.markdown("""
         color: #b0b0b0; 
         font-size: 1rem;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     
     /* Job Card Styling */
