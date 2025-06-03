@@ -404,7 +404,7 @@ def auth_page():
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
         st.markdown("""
-            <div style='text-align:center; font-size:28px; font-weight:bold; padding-bottom:10px;'>
+            <div style='text-align:center; font-size:28px; font-weight:bold; padding-bottom:10px; margin-bottom:20px;'>
                 📝 Job Classifier
             </div>
         """, unsafe_allow_html=True)
