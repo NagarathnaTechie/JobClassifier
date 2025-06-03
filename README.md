@@ -4,7 +4,7 @@
 
 Job Classifier is a Streamlit-based web application designed to streamline job searching by analyzing user resumes and providing personalized job recommendations. Leveraging natural language processing (NLP) and Firebase authentication, the app extracts key information from PDF resumes, matches skills and experience to job roles, and delivers tailored job suggestions. The intuitive dark-themed interface ensures a seamless user experience, from authentication to job discovery.
 
-Features
+**Features**
 
 Firebase Authentication
 Secure User Management: Integrated with Firebase Authentication for robust signup and login functionality.
@@ -15,39 +15,14 @@ Secrets Management: Stores Firebase configuration securely in Streamlit secrets,
 **Core Functionalities**
 
 Resume Parsing:
-Extracts key details (name, skills, education, work experience) from PDF resumes using PyPDF2 and spaCy with the en_core_web_sm model.
-Allows users to review and edit extracted data for accuracy.
-
-
-
+* Extracts key details (name, skills, education, work experience) from PDF resumes using PyPDF2 and spaCy with the en_core_web_sm model.
+* Allows users to review and edit extracted data for accuracy.
 Job Recommendations:
-
-
-
-
-
-Matches resume data against a predefined dataset (Job_Roles.csv) using a recommendation algorithm.
-
-
-
-Displays top job matches with match percentages and predicted job categories.
-
-
-
-Features interactive job cards with hover effects and color-coded match indicators (green for ≥80%, yellow for ≥60%, red for <60%).
-
-
-
+* Matches resume data against a predefined dataset (Job_Roles.csv) using a recommendation algorithm.
+* Displays top job matches with match percentages and predicted job categories.
+* Features interactive job cards with hover effects and color-coded match indicators (green for ≥80%, yellow for ≥60%, red for <60%).
 User Interface:
-
-
-
-
-
 Dark-themed, responsive design with custom CSS for enhanced aesthetics (gradient buttons, cards, progress bars).
-
-
-
 Multi-page navigation (authentication, upload, review, results) with a collapsible sidebar.
 
 
