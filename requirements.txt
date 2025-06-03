@@ -1,10 +1,11 @@
-pip
-setuptools
-wheel
-blis==0.7.9
+pip>=24.0
+setuptools>=65.5.1
+wheel>=0.41.2
+
 streamlit==1.29.0
 PyPDF2==3.0.1
-spacy==3.6.1
+spacy==3.5.4
+blis==0.7.9
 pandas==2.0.3
 numpy==1.25.2
 firebase-admin==6.2.0
