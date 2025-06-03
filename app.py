@@ -357,7 +357,7 @@ def check_authentication():
         navigate_to('auth')
         return False
     return True
-
+    
 def display_header():
     st.markdown("""
         <style>
@@ -382,11 +382,6 @@ def display_header():
         </style>
         <div class="header-bar">
             <div class="header-logo">📝 Job Classifier</div>
-            <div>
-                <form action="?logout=true" method="post">
-                    <button style="background:none;border:none;color:#007bff;cursor:pointer;">🚪 Logout</button>
-                </form>
-            </div>
         </div>
     """, unsafe_allow_html=True)
 
@@ -396,8 +391,9 @@ def display_header():
         </div>
     """, unsafe_allow_html=True)
 
-    if st.experimental_get_query_params().get("logout", [""])[0] == "true":
+    if st.button("🚪 Logout"):
         logout()
+
 
 
 
