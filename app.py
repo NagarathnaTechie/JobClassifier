@@ -372,7 +372,7 @@ def display_header():
 
     # Welcome text centered below
     st.markdown(f"""
-        <div style='text-align:center; font-size:25px; margin-top:10px;'>
+        <div style='text-align:center; font-size:40px; font-weight: 400; margin-top:10px;'>
             Welcome, {st.session_state.user_info.get('name', 'User')}
         </div>
     """, unsafe_allow_html=True)
