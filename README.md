@@ -163,6 +163,13 @@ streamlit run app.py
 
 <hr style="border: 0.5px solid #e1e4e8; margin: 24px 0;">
 
+## 📞 Contact
+Have questions or suggestions?
+
+📧 [Email](nagarathnashenoy123@gmail.com)
+
+🔗 [LinkedIn](https://www.linkedin.com/in/nagarathna-shenoy-457751218).
+
 <h3 align="center">🚀 Ready to revolutionize your job search?</h3>
 <p align="center">
 <a href="https://jobclassifier-24.streamlit.app/" style="background: #4285F4; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Try Live Demo</a>
