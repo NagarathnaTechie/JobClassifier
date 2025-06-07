@@ -167,5 +167,5 @@ streamlit run app.py
 <p align="center">
 <a href="https://jobclassifier-24.streamlit.app/" style="background: #4285F4; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Try Live Demo</a>
 </p>
-```
+
 
